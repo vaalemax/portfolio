@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Valerio Massimo Moretti — Java Software Engineer</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <nav class="navbar" id="navbar">
+    <a href="#home" class="logo">vm<span class="accent">.</span>moretti</a>
+    <button class="nav-toggle" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact" class="nav-cta">Contact</a></li>
+    </ul>
+  </nav>
+
+  <section id="home" class="hero">
+    <div class="hero-content">
+      <div class="terminal-line">
+        <span class="prompt">~/portfolio</span>
+        <span class="command"> $ whoami</span>
+      </div>
+      <h1 class="hero-name">
+        <span id="typed-name"></span><span class="cursor">|</span>
+      </h1>
+      <h2 class="hero-title">Java Software Engineer</h2>
+      <p class="hero-sub">
+        3+ years building production systems for Italian public institutions.<br />
+        Backend-first, ownership-driven, open to opportunities.
+      </p>
+      <div class="hero-actions">
+        <a href="#projects" class="btn-primary">View my work</a>
+        <a href="#contact" class="btn-secondary">Get in touch</a>
+      </div>
+    </div>
+    <div class="hero-terminal">
+      <div class="terminal-window">
+        <div class="terminal-header">
+          <span class="dot red"></span>
+          <span class="dot yellow"></span>
+          <span class="dot green"></span>
+          <span class="terminal-title">profile.json</span>
+        </div>
+        <pre class="terminal-body"><code>
+            <span class="json-brace">{</span>
+                <span class="json-key">"role"</span><span class="json-colon">:</span> <span class="json-str">"Java Software Engineer"</span>,
+                <span class="json-key">"experience"</span><span class="json-colon">:</span> <span class="json-str">"3 years"</span>,
+                <span class="json-key">"stack"</span><span class="json-colon">:</span> <span class="json-arr">[</span>
+                    <span class="json-str">"Java 17+"</span>, <span class="json-str">"Spring Boot"</span>,
+                    <span class="json-str">"Microservices"</span>, <span class="json-str">"PostgreSQL"</span>
+                <span class="json-arr">]</span>,
+                <span class="json-key">"education"</span><span class="json-colon">:</span> <span class="json-str">"B.Sc. Computer Eng. (in progress)"</span>,
+                <span class="json-key">"location"</span><span class="json-colon">:</span> <span class="json-str">"Italy — open to relocation"</span>,
+                <span class="json-key">"available"</span><span class="json-colon">:</span> <span class="json-bool">true</span>
+            <span class="json-brace">}</span>
+        </code></pre>
+      </div>
+    </div>
+  </section>
+
+  <section id="about" class="about section">
+    <div class="container">
+      <div class="section-eyebrow">About</div>
+      <div class="about-grid">
+        <div class="about-text">
+          <h2 class="section-title">A backend engineer with <span class="accent">real ownership</span></h2>
+          <p>
+            I'm a third-year Computer Engineering student who started working professionally before finishing my degree.
+            After a year as a Data Analyst handling large-scale SQL-based data migrations, I transitioned to backend software engineering, and I haven't looked back.
+          </p>
+          <p>
+            For the past two years I've been the sole backend developer maintaining and extending a national water-quality monitoring platform used by regional and provincial authorities across Italy.
+            I own the feature roadmap, handle production incidents, and occasionally step into Angular when the team needs frontend coverage.
+          </p>
+          <p>
+            I'm looking for my next challenge, ideally in a team where engineering quality and system design are taken seriously.
+          </p>
+        </div>
+        <div class="about-stats">
+          <div class="stat-card">
+            <span class="stat-num accent">3+</span>
+            <span class="stat-label">years of professional experience</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-num accent">2</span>
+            <span class="stat-label">years with Java &amp; Spring Boot in production</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-num accent">4</span>
+            <span class="stat-label">enterprise projects for public institutions</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-num accent">1</span>
+            <span class="stat-label">national platform under sole backend ownership</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="experience" class="experience section">
+    <div class="container">
+      <div class="section-eyebrow">Experience</div>
+      <h2 class="section-title">Where I've worked</h2>
+      <div class="timeline">
+
+        <div class="timeline-item">
+          <div class="timeline-meta">
+            <span class="timeline-date">2024 — present</span>
+            <span class="timeline-tag">Full-time</span>
+          </div>
+          <div class="timeline-content">
+            <h3>Java Software Engineer</h3>
+            <span class="timeline-company">We-COM | Clients: Lazio DiSCo, Istituto Superiore di Sanità (ISS)</span>
+            <ul class="timeline-list">
+              <li>Sole backend developer on a national water-quality monitoring platform, managing the full feature lifecycle from specification to production deployment.</li>
+              <li>Designed and implemented new features using Java, Spring Boot, PostgreSQL, and Liquibase in a microservices architecture orchestrated with Docker and ArgoCD.</li>
+              <li>Handled production bug reports from regional and provincial health authorities, diagnosing incidents across backend services and database layers.</li>
+              <li>Stepped into Angular frontend development when required, ensuring delivery continuity across the full stack.</li>
+              <li>AGGIUGNI LAZIO DISCO, NON STO PARLANDO DI LAZIO DISCO Contributed to two additional public-sector projects: a legacy Java EE → Spring Boot + Thymeleaf migration and a water safety risk-assessment platform (Piano di Sicurezza delle Acque).</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-meta">
+            <span class="timeline-date">2023 — 2024</span>
+            <span class="timeline-tag">Full-time</span>
+          </div>
+          <div class="timeline-content">
+            <h3>Data Analyst</h3>
+            <span class="timeline-company">Lazio DiSCo</span>
+            <ul class="timeline-list">
+              <li>NON CONVERSIONI Performed large-scale data conversion and migration tasks using SQL and Python scripting.</li>
+              <li>RIVEDI TUTTO QUA Built and maintained analytical pipelines to support reporting requirements for public-sector clients.</li>
+              <li>Collaborated with cross-functional teams to validate data quality and ensure consistency across systems.</li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section id="skills" class="skills section">
+    <div class="container">
+      <div class="section-eyebrow">Skills</div>
+      <h2 class="section-title">Technical stack</h2>
+      <div class="skills-grid">
+
+        <div class="skill-group">
+          <h3 class="skill-group-title"><i class="fas fa-server"></i> Backend</h3>
+          <div class="tag-list">
+            <span class="tag">&lt;Java 17+/&gt;</span>
+            <span class="tag">&lt;Spring Boot/&gt;</span>
+            <span class="tag">&lt;Spring Modulith/&gt;</span>
+            <span class="tag">&lt;REST APIs/&gt;</span>
+            <span class="tag">&lt;C/&gt;</span>
+            <span class="tag">&lt;Keycloak/&gt;</span>
+          </div>
+        </div>
+
+        <div class="skill-group">
+          <h3 class="skill-group-title"><i class="fas fa-database"></i> Data</h3>
+          <div class="tag-list">
+            <span class="tag">&lt;PostgreSQL/&gt;</span>
+            <span class="tag">&lt;MySQL/&gt;</span>
+            <span class="tag">&lt;MongoDB/&gt;</span>
+            <span class="tag">&lt;Liquibase/&gt;</span>
+            <span class="tag">&lt;Hibernate/JPA/&gt;</span>
+          </div>
+        </div>
+
+        <div class="skill-group">
+          <h3 class="skill-group-title"><i class="fas fa-cube"></i> DevOps &amp; Infra</h3>
+          <div class="tag-list">
+            <span class="tag">&lt;Docker/&gt;</span>
+            <span class="tag">&lt;ArgoCD/&gt;</span>
+            <span class="tag">&lt;Portainer/&gt;</span>
+            <span class="tag">&lt;GitLab CI/&gt;</span>
+            <span class="tag">&lt;Git/&gt;</span>
+          </div>
+        </div>
+
+        <div class="skill-group">
+          <h3 class="skill-group-title"><i class="fas fa-window-restore"></i> Frontend</h3>
+          <div class="tag-list">
+            <span class="tag">&lt;Angular/&gt;</span>
+            <span class="tag">&lt;HTML/CSS/&gt;</span>
+            <span class="tag">&lt;TypeScript/&gt;</span>
+            <span class="tag">&lt;Thymeleaf/&gt;</span>
+          </div>
+        </div>
+
+        <div class="skill-group">
+          <h3 class="skill-group-title"><i class="fas fa-drafting-compass"></i> Architecture &amp; Design</h3>
+          <div class="tag-list">
+            <span class="tag">&lt;Microservices/&gt;</span>
+            <span class="tag">&lt;DDD/&gt;</span>
+            <span class="tag">&lt;Modular Monolith/&gt;</span>
+            <span class="tag">&lt;OpenAPI/Swagger/&gt;</span>
+            <span class="tag">&lt;MapStruct/&gt;</span>
+            <span class="tag">&lt;Event-driven (RabbitMQ)/&gt;</span>
+          </div>
+        </div>
+
+        <div class="skill-group">
+          <h3 class="skill-group-title"><i class="fas fa-users"></i> Collaboration</h3>
+          <div class="tag-list">
+            <span class="tag">&lt;SCRUM/&gt;</span>
+            <span class="tag">&lt;Agile/&gt;</span>
+            <span class="tag">&lt;Team working/&gt;</span>
+            <span class="tag">&lt;Technical documentation/&gt;</span>
+            <span class="tag">&lt;Cross-team communication/&gt;</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section id="projects" class="projects section">
+    <div class="container">
+      <div class="section-eyebrow">Projects</div>
+      <h2 class="section-title">Selected work</h2>
+
+      <div class="project-flagship">
+        <div class="flagship-label">— Flagship project</div>
+        <div class="flagship-grid">
+          <div class="flagship-info">
+            <h3 class="flagship-title">National Water Quality Monitoring Platform</h3>
+            <p class="flagship-client">Istituto Superiore di Sanità (ISS) · Italian Ministry of Health</p>
+            <p class="flagship-desc">
+              A national digital platform for the acquisition, control, management, and analysis of data on water intended for human consumption in Italy.
+              The system ensures the availability of information on water access and quality at the point of use, from environmental water resources through the entire treatment and distribution chain.
+            </p>
+            <p class="flagship-desc">
+              I joined the project ten months ago as the sole backend developer responsible for new feature development.
+              I own the full backend lifecycle: from technical design and implementation to deployment and incident response on behalf of regional and provincial health authorities across the country.
+            </p>
+            <div class="flagship-highlights">
+              <div class="highlight-item">
+                <i class="fas fa-user-cog"></i>
+                <span>Sole backend engineer — full feature ownership</span>
+              </div>
+              <div class="highlight-item">
+                <i class="fas fa-building"></i>
+                <span>Used by regional &amp; provincial health authorities nationwide</span>
+              </div>
+              <div class="highlight-item">
+                <i class="fas fa-layer-group"></i>
+                <span>Full-stack contribution including Angular when needed</span>
+              </div>
+              <div class="highlight-item">
+                <i class="fas fa-bug"></i>
+                <span>Primary point of contact for production incident resolution</span>
+              </div>
+            </div>
+            <div class="tag-list flagship-tags">
+              <span class="tag">&lt;Java/&gt;</span>
+              <span class="tag">&lt;Spring Boot/&gt;</span>
+              <span class="tag">&lt;PostgreSQL/&gt;</span>
+              <span class="tag">&lt;Microservices/&gt;</span>
+              <span class="tag">&lt;Docker/&gt;</span>
+              <span class="tag">&lt;ArgoCD/&gt;</span>
+              <span class="tag">&lt;Liquibase/&gt;</span>
+              <span class="tag">&lt;Angular/&gt;</span>
+              <span class="tag">&lt;GitLab CI/&gt;</span>
+            </div>
+          </div>
+          <div class="flagship-aside">
+            <div class="aside-card">
+              <div class="aside-label">Role</div>
+              <div class="aside-value">Backend Software Engineer (sole)</div>
+            </div>
+            <div class="aside-card">
+              <div class="aside-label">Client</div>
+              <div class="aside-value">ISS — National Institute of Health</div>
+            </div>
+            <div class="aside-card">
+              <div class="aside-label">Duration</div>
+              <div class="aside-value">10+ months (ongoing)</div>
+            </div>
+            <div class="aside-card">
+              <div class="aside-label">Domain</div>
+              <div class="aside-value">Public Health / Environmental Data</div>
+            </div>
+            <div class="aside-card">
+              <div class="aside-label">Architecture</div>
+              <div class="aside-value">Microservices, REST, CI/CD</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <h3 class="other-projects-title">Other projects</h3>
+      <div class="projects-grid">
+
+        <div class="project-card">
+          <div class="project-card-header">
+            <span class="project-index">01</span>
+            <div class="tag-list">
+              <span class="tag tag-sm">&lt;Refactoring/&gt;</span>
+              <span class="tag tag-sm">&lt;Spring Boot/&gt;</span>
+              <span class="tag tag-sm">&lt;Thymeleaf/&gt;</span>
+            </div>
+          </div>
+          <h3>Legacy Application Migration</h3>
+          <p class="project-client">Istituto Superiore per la Protezione e la Ricerca Ambientale (ISPRA) / Istituto Superiore di Sanità (ISS)</p>
+          <p>
+            Full refactor of a Java Enterprise Edition application using PrimeFaces toward a modern Spring Boot + Thymeleaf stack.
+            Improved maintainability, reduced dependencies on legacy APIs, and aligned the codebase with current Java ecosystem standards.
+          </p>
+        </div>
+
+        <div class="project-card">
+          <div class="project-card-header">
+            <span class="project-index">02</span>
+            <div class="tag-list">
+              <span class="tag tag-sm">&lt;Spring Boot/&gt;</span>
+              <span class="tag tag-sm">&lt;PostgreSQL/&gt;</span>
+              <span class="tag tag-sm">&lt;RabbitMQ/&gt;</span>
+            </div>
+          </div>
+          <h3>Water Safety Plan Platform (PSA)</h3>
+          <p class="project-client">Istituto Superiore di Sanità (ISS)</p>
+          <p>
+            Backend development for a risk-assessment platform supporting Water Safety Plans (Piani di Sicurezza delle Acque):
+            an integrated prevention system spanning the entire drinking-water supply chain,
+            aligned with WHO guidelines and Italian Ministry of Health directives.
+          </p>
+        </div>
+        <p>AGGIUNGI LAZIODISCO</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="contact section">
+    <div class="container contact-inner">
+      <div class="section-eyebrow">Contact</div>
+      <h2 class="section-title">Let's talk</h2>
+      <p class="contact-sub">
+        I'm actively exploring opportunities around the world.<br />
+        If you think we might be a good fit, feel free to reach out.
+      </p>
+      <div class="contact-links">
+        <a href="mailto:valemax.moretti@gmail.com" class="contact-item">
+          <i class="fas fa-envelope"></i>
+          <span>valemax.moretti@gmail.com</span>
+        </a>
+        <a href="https://www.linkedin.com/in/valerio-massimo-moretti-791749330/" target="_blank" rel="noopener" class="contact-item">
+          <i class="fab fa-linkedin"></i>
+          <span>linkedin.com/in/valerio-massimo-moretti-791749330/</span>
+        </a>
+      </div>
+      <a href="mailto:valemax.moretti@gmail.com" class="btn-primary contact-cta">Send me an email</a>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <span class="logo">vm<span class="accent">.</span>moretti</span>
+      <span class="footer-copy">© 2026 Valerio Massimo Moretti. Built with intent.</span>
+      <div class="footer-links">
+        <a href="mailto:valemax.moretti@gmail.com"><i class="fas fa-envelope"></i></a>
+        <a href="https://www.linkedin.com/in/valerio-massimo-moretti-791749330/" target="_blank" rel="noopener"><i class="fab fa-linkedin"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
