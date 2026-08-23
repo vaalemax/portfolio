@@ -344,7 +344,99 @@
             aligned with WHO guidelines and Italian Ministry of Health directives.
           </p>
         </div>
-        <p>AGGIUNGI LAZIODISCO</p>
+
+        <div class="project-card">
+          <div class="project-card-header">
+            <span class="project-index">03</span>
+            <div class="tag-list">
+              <span class="tag tag-sm">&lt;Spring Boot/&gt;</span>
+              <span class="tag tag-sm">&lt;PostgreSQL/&gt;</span>
+              <span class="tag tag-sm">&lt;Spring Modulith/&gt;</span>
+            </div>
+          </div>
+          <h3>Course Management Portal</h3>
+          <p class="project-client">Lazio DiSCo</p>
+          <p>
+            Backend development for a course delivery portal supporting the training
+            and certification of managers, coaches, and sports assistants. Implemented
+            the didactics module using Domain-Driven Design within a Spring Modulith
+            architecture, built PDF and Excel data export, and developed RESTful APIs
+            with Spring Boot and PostgreSQL. Currently in pre-release.
+          </p>
+        </div>
+      </div>
+
+      <h3 class="personal-projects-title">Personal projects</h3>
+      <div class="projects-grid">
+
+        <div class="project-card">
+          <div class="project-card-header">
+            <span class="project-index">01</span>
+            <div class="tag-list">
+              <span class="tag tag-sm">&lt;Spring Boot/&gt;</span>
+              <span class="tag tag-sm">&lt;Spring Security/&gt;</span>
+              <span class="tag tag-sm">&lt;OAuth2/OIDC/&gt;</span>
+            </div>
+          </div>
+          <h3>authserver</h3>
+          <p class="project-client">Personal Project</p>
+          <p>
+            A multi-tenant OAuth2/OIDC authorization server built from scratch on
+            Spring Authorization Server, modeled after Keycloak's architecture.
+            Implemented path-based realm isolation with per-tenant RSA signing
+            keys, built a REST admin API and a browser-based admin console
+            authenticated through the server's own OAuth2 flow, and developed a
+            custom RBAC/ABAC engine resolving per-user access conditions at
+            request time. Proven against a real external client, not just tested
+            in isolation — see Keyra × authserver below.
+          </p>
+        </div>
+
+        <div class="project-card">
+          <div class="project-card-header">
+            <span class="project-index">02</span>
+            <div class="tag-list">
+              <span class="tag tag-sm">&lt;Spring Boot/&gt;</span>
+              <span class="tag tag-sm">&lt;PostgreSQL/&gt;</span>
+              <span class="tag tag-sm">&lt;Thymeleaf/&gt;</span>
+              <span class="tag tag-sm">&lt;AES-256/&gt;</span>
+            </div>
+          </div>
+          <h3>Keyra</h3>
+          <p class="project-client">Personal Project</p>
+          <p>
+            A self-contained encrypted password manager built to explore
+            production-grade security engineering end to end. Implemented
+            AES-256-GCM vault encryption with a key derived from the user's own
+            master password and never stored server-side, built TOTP two-factor
+            authentication with single-use backup codes, and developed
+            brute-force protection and a full audit trail for every
+            security-sensitive action. Published alongside its OAuth2-delegated
+            counterpart above.
+          </p>
+        </div>
+
+        <div class="project-card">
+          <div class="project-card-header">
+            <span class="project-index">02</span>
+            <div class="tag-list">
+              <span class="tag tag-sm">&lt;Spring Boot/&gt;</span>
+              <span class="tag tag-sm">&lt;OAuth2 Client/&gt;</span>
+              <span class="tag tag-sm">&lt;PostgreSQL/&gt;</span>
+            </div>
+          </div>
+          <h3>Keyra × authserver</h3>
+          <p class="project-client">Companion to authserver</p>
+          <p>
+            A variant of Keyra rebuilt to delegate authentication entirely to
+            authserver instead of managing its own login. Implemented the OAuth2
+            Authorization Code + PKCE client flow, mapped OIDC claims onto local
+            application state, and gated a permission-sensitive feature behind a
+            live authorization check against authserver's ABAC engine instead of
+            a cached local role. The real-world proof that authserver works as an
+            identity provider, not just against test requests.
+          </p>
+        </div>
       </div>
     </div>
   </section>
@@ -358,16 +450,16 @@
         If you think we might be a good fit, feel free to reach out.
       </p>
       <div class="contact-links">
-        <a href="mailto:valemax.moretti@gmail.com" class="contact-item">
+        <a href="mailto:valerio.massimo.moretti@proton.me" class="contact-item">
           <i class="fas fa-envelope"></i>
-          <span>valemax.moretti@gmail.com</span>
+          <span>valerio.massimo.moretti@proton.me</span>
         </a>
         <a href="https://www.linkedin.com/in/valerio-massimo-moretti-791749330/" target="_blank" rel="noopener" class="contact-item">
           <i class="fab fa-linkedin"></i>
           <span>linkedin.com/in/valerio-massimo-moretti-791749330/</span>
         </a>
       </div>
-      <a href="mailto:valemax.moretti@gmail.com" class="btn-primary contact-cta">Send me an email</a>
+      <a href="mailto:valerio.massimo.moretti@proton.me" class="btn-primary contact-cta">Send me an email</a>
     </div>
   </section>
 
@@ -376,7 +468,7 @@
       <span class="logo">vm<span class="accent">.</span>moretti</span>
       <span class="footer-copy">© 2026 Valerio Massimo Moretti. Built with intent.</span>
       <div class="footer-links">
-        <a href="mailto:valemax.moretti@gmail.com"><i class="fas fa-envelope"></i></a>
+        <a href="mailto:valerio.massimo.moretti@proton.me"><i class="fas fa-envelope"></i></a>
         <a href="https://www.linkedin.com/in/valerio-massimo-moretti-791749330/" target="_blank" rel="noopener"><i class="fab fa-linkedin"></i></a>
       </div>
     </div>
