@@ -544,6 +544,7 @@ img { max-width: 100%; display: block; }
 
 /* Personal projects */
 .personal-projects-title {
+  margin-top: 3rem;
   font-family: var(--font-mono);
   font-size: 0.8rem;
   color: var(--text-muted);
